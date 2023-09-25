@@ -1,25 +1,27 @@
-// console.log("hello world")
- const a=10;
- const b=5;
-console.log(a)
-console.log(b)
-const sum= a+b;
-console.log(sum)
+const app =require('express')()
 
-// // Array
-const numbers=[10,20,30]
-console.log(numbers [1])
 
-// to calculate length of array
-console.log(numbers.length)
 
-// objects
 
-const person = {
-    name : "Raju",
-    age : 21
-}
+app.get('/',(req,res)=>{
+    // console.log(req)
+    // res.send("This is home page")
 
-// key:value
-console.log("This is person name " + person.name)
-console.log(person.age)
+    res.json({
+        message : "I am RAju"
+    })
+
+})
+
+app.get('/about',(req,res)=>{
+    res.send("This is about page")
+})
+
+
+
+
+
+
+app.listen(3000,function(){
+    console.log("node js project has been started on port 3000")
+})
