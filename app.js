@@ -1,14 +1,25 @@
 // console.log("hello world")
-// const a=10;
-// const b=5;
-// console.log(a)
-// console.log(b)
-// const sum= a+b;
-// console.log(sum)
+ const a=10;
+ const b=5;
+console.log(a)
+console.log(b)
+const sum= a+b;
+console.log(sum)
 
-// Array
+// // Array
 const numbers=[10,20,30]
-// console.log(numbers [1])
+console.log(numbers [1])
 
 // to calculate length of array
-console.length(numbers.length)
+console.log(numbers.length)
+
+// objects
+
+const person = {
+    name : "Raju",
+    age : 21
+}
+
+// key:value
+console.log("This is person name " + person.name)
+console.log(person.age)
