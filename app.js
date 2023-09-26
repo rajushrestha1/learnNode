@@ -8,17 +8,17 @@ app.get('/',(req,res)=>{
     // res.send("This is home page")
 
     res.json({
-        message : "I am RAju"
+        message : "I am Raju shrestha "
     })
 
 })
 
 app.get('/about',(req,res)=>{
-    res.send("This is about page")
+    res.json({
+        status: 20,
+        message: "You are in about page"
+    })
 })
-
-
-
 
 
 
